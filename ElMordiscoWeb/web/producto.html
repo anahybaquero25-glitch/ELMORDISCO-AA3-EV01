@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Mordisco - Productos</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h1>EL MORDISCO</h1>
+    <h2>Gestión de Productos</h2>
+
+    <form action="ProductoServlet" method="post">
+
+        <label>ID:</label>
+        <input type="text" name="idProducto">
+        <br><br>
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+        <br><br>
+
+        <label>Categoría:</label>
+        <input type="text" name="categoria">
+        <br><br>
+
+        <label>Precio:</label>
+        <input type="number" name="precio" step="0.01">
+        <br><br>
+
+        <label>Stock:</label>
+        <input type="number" name="stock">
+        <br><br>
+
+        <button type="submit">GUARDAR</button>
+        <button type="submit" name="accion" value="actualizar">
+    ACTUALIZAR
+</button>
+        <button type="submit" name="accion" value="eliminar">
+    ELIMINAR
+</button>
+
+    </form>
+
+    <br>
+
+    <a href="ProductoServlet?accion=listar">
+        CONSULTAR PRODUCTOS
+    </a>
+
+</body>
+</html>
